@@ -73,15 +73,19 @@ src/
 4. **Preview:** Check the "Live Preview" panel on the right (or "Preview" tab on mobile) to ensure everything looks correct.
 5. **Download:** Click the **"Download Invoice PDF"** button to save the high-quality PDF to your device.
 
+
 ## 🌐 Deployment
 
-Since this is a static frontend application, you can deploy it for free using:
-- **Vercel** (Recommended)
-- **Netlify**
-- **GitHub Pages**
+🚀 This project is deployed on **Vercel** with seamless GitHub integration.
 
-Just connect your GitHub repository to any of these services, and it will deploy automatically!
+🔗 **Live Demo:** https://vjvk-invoice-generator.vercel.app/
+
+Every push to the repository triggers an **automatic deployment**, ensuring the latest version is always live.
+
+✨ Fast • Reliable • Always up-to-date
 
 ---
 
-Developed with ❤️ for Small Businesses.
+### 💡 About
+
+Developed with ❤️ for **small businesses**.

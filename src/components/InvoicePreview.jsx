@@ -15,7 +15,7 @@ const InvoicePreview = ({ data }) => {
 
   if (!hasItems && !from.name && !to.name) {
     return (
-      <div id="invoice-print-area" className="invoice-preview-wrapper" style={{ background: '#fff' }}>
+      <div id="invoice-print-area" className="invoice-preview-wrapper" style={{ background: 'var(--bg-card)' }}>
         <div className="empty-preview">
           <div className="empty-icon">📄</div>
           <div className="empty-text">Your invoice preview will appear here</div>
@@ -116,7 +116,7 @@ const InvoicePreview = ({ data }) => {
             ))}
             {items.filter(i => i.description).length === 0 && (
               <tr>
-                <td colSpan={5} style={{ textAlign: 'center', color: '#94a3b8', padding: '1.5rem', fontSize: '0.75rem' }}>
+                <td colSpan={5} style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '1.5rem', fontSize: '0.75rem' }}>
                   No items added yet
                 </td>
               </tr>
@@ -131,7 +131,7 @@ const InvoicePreview = ({ data }) => {
             <span>{fmt(currency, subtotal)}</span>
           </div>
           {parseFloat(discount) > 0 && (
-            <div className="inv-total-row" style={{ color: '#dc2626' }}>
+            <div className="inv-total-row" style={{ color: 'var(--danger)' }}>
               <span>Discount ({discount}%)</span>
               <span>-{fmt(currency, discountAmt)}</span>
             </div>
@@ -164,7 +164,7 @@ const InvoicePreview = ({ data }) => {
           <div className="inv-signature-block">
             <div className="inv-signature-line" />
             <div>Authorised Signature</div>
-            <div style={{ marginTop: '2px', fontWeight: 600, color: '#334155' }}>{from.name || 'Your Company'}</div>
+            <div style={{ marginTop: '2px', fontWeight: 600, color: 'var(--text-primary)' }}>{from.name || 'Your Company'}</div>
           </div>
         </div>
         <div className="inv-powered">Generated with Invoice Pro • Professional Invoice Generator</div>

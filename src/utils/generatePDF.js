@@ -14,7 +14,7 @@ export async function generatePDF(filename = 'Invoice.pdf') {
 
   try {
     const opt = {
-      margin:       10, // 10mm margin
+      margin:       5, // 5mm margin
       filename:     filename,
       image:        { type: 'jpeg', quality: 1.0 },
       html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
