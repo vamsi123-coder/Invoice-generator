@@ -78,7 +78,7 @@ src/
 
 🚀 This project is deployed on **Vercel** with seamless GitHub integration.
 
-🔗 **Live Demo:** https://vjvk-invoice-generator.vercel.app/
+🔗 **Live Demo:** https://jaya-invoice-generator.vercel.app/
 
 Every push to the repository triggers an **automatic deployment**, ensuring the latest version is always live.
 
