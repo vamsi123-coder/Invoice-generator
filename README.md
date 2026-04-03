@@ -1,16 +1,87 @@
-# React + Vite
+# 🧾 Invoice Pro - Professional Invoice Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern, and high-performance invoice generator built with **React** and **Vite**. This application is designed for small business owners and shopkeepers who need a fast, reliable, and private way to generate professional invoices for their customers.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live Preview:** See your invoice update in real-time as you type.
+- **Dynamic Item Management:** Easily add or remove items with automatic subtotal and grand total calculations.
+- **Detailed Business Info:** Include your shop name, tagline, address, GST details, branding, and UPI ID.
+- **Tax & Discount Support:** Built-in calculation for GST/Tax percentages and discounts.
+- **Multi-Currency Support:** Support for ₹ (INR), $ (USD), € (EUR), £ (GBP), and more.
+- **Instant PDF Download:** Generate high-resolution, professional A4 PDF invoices directly in the browser.
+- **Fully Responsive:** Works perfectly on desktops, tablets, and mobile devices.
+- **100% Privacy:** No data is sent to any server. Everything happens locally on your device.
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js (Hooks & Functional Components)
+- **Styling:** Custom CSS (Modern, Dark-themed UI with Glassmorphism)
+- **PDF Generation:** `html2pdf.js` & `html2canvas`
+- **Build Tool:** Vite
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vamsi123-coder/Invoice-generator.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd Invoice-generator
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser:**
+   Navigate to `http://localhost:5173` to see the app running.
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── InvoiceForm.jsx      # Input fields for invoice data
+│   └── InvoicePreview.jsx   # Live-updating invoice layout
+├── utils/
+│   └── generatePDF.js       # Core PDF generation logic
+├── App.jsx                  # Main layout and state management
+├── App.css                  # Component-specific styles
+└── index.css                # Global design system & theme
+```
+
+## 📝 How to Use
+
+1. **Fill in Details:** Enter your business information and common invoice details.
+2. **Add Items:** List your products/services with their quantity and price.
+3. **Configure Tax:** Adjust the tax/GST percentage and any applicable discounts.
+4. **Preview:** Check the "Live Preview" panel on the right (or "Preview" tab on mobile) to ensure everything looks correct.
+5. **Download:** Click the **"Download Invoice PDF"** button to save the high-quality PDF to your device.
+
+## 🌐 Deployment
+
+Since this is a static frontend application, you can deploy it for free using:
+- **Vercel** (Recommended)
+- **Netlify**
+- **GitHub Pages**
+
+Just connect your GitHub repository to any of these services, and it will deploy automatically!
+
+---
+
+Developed with ❤️ for Small Businesses.
